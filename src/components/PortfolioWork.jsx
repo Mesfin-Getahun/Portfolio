@@ -7,6 +7,7 @@ import rpsImg from '../assets/Screenshot 2025-04-14 162532.png';
 import weatherImg from '../assets/Screenshot 2025-04-14 163007.png';
 import electionImg from '../assets/Screenshot 2026-05-05 161323.png';
 import tourImg from '../assets/photo_2025-12-09_21-14-43.jpg';
+import netflixImg from '../assets/netflix.png';
 
 const projects = [
   {
@@ -26,12 +27,12 @@ const projects = [
     tags: ['HTML', 'CSS', 'JavaScript']
   },
   {
-    title: 'E-Learning Platform',
-    description: 'An interactive learning management system featuring video courses, quizzes, and progress tracking. Designed for seamless student-teacher interaction.',
-    image: calcImg,
-    link: '#',
-    github: '#',
-    tags: ['React', 'Express', 'MySQL']
+    title: 'Netflix Clone',
+    description: 'A robust streaming platform clone featuring real-time movie data from TMDB API, secure Firebase authentication, and a fully responsive media-rich interface built for performance.',
+    image: netflixImg,
+    link: 'https://netflix-clone-two-coral.vercel.app/', /* Add your live link here */
+    github: 'https://github.com/Mesfin-Getahun/Netflix-Clone.git', 
+    tags: ['React', 'Firebase', 'TMDB API', 'Vite']
   },
   {
     title: 'Weather App',
@@ -93,21 +94,50 @@ const PortfolioWork = () => {
               className="group flex flex-col bg-white dark:bg-dark-card rounded-2xl overflow-hidden border border-gray-100 dark:border-white/5 shadow-lg hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
             >
               {/* Image Container */}
-              <div className="relative aspect-video overflow-hidden border-b border-gray-100 dark:border-white/5 flex items-center justify-center bg-white dark:bg-white">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  loading="lazy"
-                  className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
-                />
-              </div>
+              {project.link && project.link !== '#' ? (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative aspect-video overflow-hidden border-b border-gray-100 dark:border-white/5 flex items-center justify-center bg-white dark:bg-white cursor-pointer"
+                >
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  />
+                </a>
+              ) : (
+                <div className="relative aspect-video overflow-hidden border-b border-gray-100 dark:border-white/5 flex items-center justify-center bg-white dark:bg-white">
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    loading="lazy"
+                    className="w-full h-full object-contain transition-transform duration-700 group-hover:scale-105"
+                  />
+                </div>
+              )}
 
               {/* Content Container */}
               <div className="p-6 md:p-8 flex flex-col flex-grow">
                 <div className="flex justify-between items-start mb-4 gap-4">
-                  <h3 className="font-bold text-2xl text-gray-900 dark:text-white group-hover:text-primary transition-colors">
-                    {project.title}
-                  </h3>
+                  {project.link && project.link !== '#' ? (
+                    <a
+                      href={project.link}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="group-hover:text-primary transition-colors"
+                    >
+                      <h3 className="font-bold text-2xl text-gray-900 dark:text-white">
+                        {project.title}
+                      </h3>
+                    </a>
+                  ) : (
+                    <h3 className="font-bold text-2xl text-gray-900 dark:text-white group-hover:text-primary transition-colors">
+                      {project.title}
+                    </h3>
+                  )}
 
                   <div className="flex gap-3 mt-1 shrink-0">
                     {project.github && project.github !== '#' && (
