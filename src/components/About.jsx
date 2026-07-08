@@ -49,14 +49,14 @@ const About = () => {
     education: (
       <ul className="space-y-4">
         <li className="p-5 bg-white dark:bg-darker border border-gray-100 dark:border-white/5 rounded-2xl shadow-sm">
-          <span className="text-primary font-semibold text-sm tracking-wide uppercase mb-1 block">Graduating Class (GC) / Last Year</span>
+          <span className="text-primary font-semibold text-sm tracking-wide uppercase mb-1 block">BSc Degree (CGPA 3.55)</span>
           <span className="text-gray-900 dark:text-gray-100 font-semibold block text-lg mb-1">Computer Science</span>
-          <span className="text-gray-600 dark:text-gray-400 text-sm block">Bahir Dar University</span>
+          <span className="text-gray-600 dark:text-gray-400 text-sm block">Bahir Dar University (Class of 2026)</span>
         </li>
         <li className="p-5 bg-white dark:bg-darker border border-gray-100 dark:border-white/5 rounded-2xl shadow-sm">
-          <span className="text-primary font-semibold text-sm tracking-wide uppercase mb-1 block">Graduating Class (GC)</span>
+          <span className="text-primary font-semibold text-sm tracking-wide uppercase mb-1 block">BA Degree</span>
           <span className="text-gray-900 dark:text-gray-100 font-semibold block text-lg mb-1">Accounting and Finance</span>
-          <span className="text-gray-600 dark:text-gray-400 text-sm block">Ambassador College</span>
+          <span className="text-gray-600 dark:text-gray-400 text-sm block">Ambassador College (Class of 2026)</span>
         </li>
       </ul>
     )
@@ -71,7 +71,7 @@ const About = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7 }}
-            className="w-full lg:w-5/12"
+            className="hidden lg:block lg:w-5/12"
           >
             <div className="relative">
               <div className="absolute inset-0 bg-primary/20 dark:bg-primary/10 rounded-[2rem] transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-6"></div>
@@ -90,7 +90,7 @@ const About = () => {
             <h1 className="text-4xl md:text-5xl font-bold mb-8 text-gray-900 dark:text-white">About Me</h1>
             
             <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-10 text-lg">
-              I’m a Full-Stack Developer and graduating Computer Science student at Bahir Dar University, passionate about building scalable and user-focused web applications.
+              I’m a recent Computer Science graduate (Class of 2026, 3.55 CGPA) from Bahir Dar University and a Full-Stack Developer, passionate about building scalable and user-focused web applications.
               <br/><br/>
               I work primarily with modern technologies like React, Node.js, and MongoDB to create efficient and reliable systems. From developing an E-Commerce platform, tour and travel website to an Internship Management System for my final year project, I enjoy turning ideas into real, working products.
               <br /><br />
