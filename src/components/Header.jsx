@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Link } from 'react-scroll';
 import { FaSun, FaMoon, FaDownload } from 'react-icons/fa6';
-import profileImg from '../assets/photo_6_2025-04-11_13-38-40.jpg';
+import profileImg from '../assets/7N6A8042.JPG';
 
 const Header = ({ theme, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -152,7 +152,8 @@ const Header = ({ theme, toggleTheme }) => {
               <img 
                 src={profileImg} 
                 alt="Mesfin Getahun" 
-                className="w-full max-w-[400px] rounded-3xl shadow-2xl shadow-black/10 dark:shadow-black/40 object-cover relative z-10 border border-white/20 dark:border-white/10"
+                className="w-full h-auto max-w-[400px] rounded-3xl shadow-2xl shadow-black/10 dark:shadow-black/40 relative z-10 border border-white/20 dark:border-white/10"
+                style={{ imageRendering: 'high-quality' }}
               />
             </div>
           </motion.div>

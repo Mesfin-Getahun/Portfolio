@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import aboutImg from '../assets/photo_1_2025-04-11_13-38-40-removebg-preview.png';
+import aboutImg from '../assets/7N6A8050.JPG';
 
 const About = () => {
   const [activeTab, setActiveTab] = useState('skills');
@@ -73,9 +73,8 @@ const About = () => {
             transition={{ duration: 0.7 }}
             className="hidden lg:block lg:w-5/12"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-primary/20 dark:bg-primary/10 rounded-[2rem] transform rotate-3 scale-105 transition-transform duration-500 hover:rotate-6"></div>
-              <img src={aboutImg} alt="About Me" loading="lazy" className="w-full rounded-[2rem] shadow-xl relative z-10 object-cover aspect-[4/5]" />
+            <div>
+              <img src={aboutImg} alt="About Me" loading="lazy" className="w-full h-auto rounded-[2rem] relative z-10" style={{ imageRendering: 'high-quality' }} />
             </div>
           </motion.div>
           
