@@ -14,8 +14,8 @@ const technicalSkills = [
   { name: 'Node.js', icon: <FaNodeJs />, color: 'text-green-500', bg: 'bg-green-500/10' },
   { name: 'PHP', icon: <FaPhp />, color: 'text-indigo-400', bg: 'bg-indigo-500/10' },
   { name: 'Tailwind CSS', icon: <FaPalette />, color: 'text-teal-400', bg: 'bg-teal-500/10' },
-  { name: 'Framer Motion', icon: <FaMagic />, color: 'text-purple-500', bg: 'bg-purple-500/10' },
-  { name: 'Responsive UI', icon: <FaMobileAlt />, color: 'text-blue-500', bg: 'bg-blue-500/10' }
+  { name: 'Flutter', icon: <FaMobileAlt />, color: 'text-blue-400', bg: 'bg-blue-500/10' },
+  { name: 'React Native', icon: <FaReact />, color: 'text-cyan-400', bg: 'bg-cyan-500/10' }
 ];
 
 const professionalSkills = [
@@ -28,7 +28,7 @@ const professionalSkills = [
 ];
 
 const tools = [
-  'VS Code', 'Antigravity', 'Cursor', 'Git & GitHub', 'Figma', 'Postman', 'MySQL / MongoDB'
+  'VS Code', 'Cursor', 'Git & GitHub', 'Figma', 'Adobe Photoshop', 'Postman', 'MySQL / MongoDB'
 ];
 
 const containerVariants = {

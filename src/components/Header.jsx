@@ -9,7 +9,7 @@ const Header = ({ theme, toggleTheme }) => {
   const [scrolled, setScrolled] = useState(false);
   const [titleIndex, setTitleIndex] = useState(0);
 
-  const titles = ['Full-Stack Developer', 'Mobile App Developer', 'UI/UX Designer'];
+  const titles = ['Full-Stack Developer', 'Mobile App Developer', 'UI/UX Designer', 'Graphics Designer'];
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
