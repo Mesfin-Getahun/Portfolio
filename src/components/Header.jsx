@@ -110,7 +110,7 @@ const Header = ({ theme, toggleTheme }) => {
             </div>
             
             <p className="mt-2 text-gray-600 dark:text-gray-400 text-lg md:text-xl max-w-lg mx-auto md:mx-0 leading-relaxed">
-              Crafting beautiful, responsive, and highly interactive user interfaces from Bahir Dar, Ethiopia.
+              Crafting beautiful, responsive, and highly interactive user interfaces from Addis Ababa, Ethiopia.
             </p>
             
             <div className="mt-10 flex flex-wrap gap-4 justify-center md:justify-start">
